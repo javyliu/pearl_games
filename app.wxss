@@ -1,0 +1,7 @@
+/**app.wxss**/
+page {
+  background-color: #fbf9fe;
+  font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+  display: flex;
+  flex-direction: column;
+}

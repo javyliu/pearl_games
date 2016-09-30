@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 32rpx;
+}
+.head {
+  padding: 80rpx;
+  line-height: 1;
+}
+.body {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  flex: 1;
+  overflow: auto;
+}
+.title {
+  display: block;
+  font-size: 52rpx;
+}
+.description {
+  display: block;
+  margin-top: 30rpx;
+  color: #888;
+  font-size: 28rpx;
+}
+
+.board {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 2rpx;
+  border: solid 1px #eee;
+  cursor: pointer;
+}
+.board-info {
+  display: flex;
+  padding: 20rpx;
+  align-items: center;
+  flex-direction: row;
+}
+.board-name {
+  flex: 1;
+}
+.board-img {
+  width: 32rpx;
+  height: 32rpx;
+}
+.game_icon{
+  width:86rpx;
+  height:86rpx;
+  padding-right:6rpx;
+}
+.game_des{
+  font-size: 24rpx;
+  color: #888;
+  font-weight: normal;
+  padding-right:20rpx;
+
+}

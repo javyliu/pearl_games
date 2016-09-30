@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="head">
+    <text class="title">掌上明珠游戏列表</text>
+    <text class="description">最热最好玩的游戏~</text>
+  </view>
+  <view class="body">
+    <scroll-view scroll-y="true" height="100%">
+      <block wx:for="{{games}}">
+        <navigator url="../game/game?id={{item.id}}&name={{item.short_name_en}}">
+          <view class="board">
+            <view class="board-info">
+              <image class="game_icon" src="http://m.pipgame.com/game_logos/iphone{{item.id}}.png" mode="aspectFill"/>
+              <text class="board-name">{{item.name_cn}}</text>
+              <text class="game_des">{{item.description}}</text>
+              <image class="board-img" src="/images/arrowright.png" mode="aspectFill"/>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </scroll-view>
+  </view>
+</view>

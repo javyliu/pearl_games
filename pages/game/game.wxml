@@ -1,0 +1,16 @@
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<scroll-view scroll-y="true" wx:if="{{title}}">
+  <view class="meta">
+    <image class="poster" src="http://www.pipgame.com/images/shared_imgs/s_{{game.short_name_en}}.jpg" mode="center" />
+    <text class="title">{{title}}({{game.description}})</text>
+    <text class="info">更新时间：{{game.update_version_date}}</text>
+    <text class="info">支持平台：<block wx:for="{{game.platform_type}}"> {{item}} </block></text>
+    <text class="info">特色：{{game.characteristic}} </text>
+  </view>
+  <view class="summary">
+    <text class="label">摘要：</text>
+    <text class="content">{{game.short_des}}</text>
+  </view>
+</scroll-view>
